@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Form</title>
+        <link rel='stylesheet' type='text/css' href='form.css'/>
+        <link href='/assets/form.css' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+
+      <div id="header"><h1>find book</h1></div>
+            <div id="wrapper">
+                <div id="inputs">
+
+                  <p><%= qs.book name %></p>
+                  <p><%= qs.author name %></p>
+<form>
+Book Name*:<br>
+<input type="text" name="book name"><br>
+Author Name*:<br>
+<input type="text" name="Author name"><br>
+
+
+  <br><input type="submit" value="Submit">
+    <br><input type="reset" value="Reset">
+
+    <button id="myButton" class="float-left submit-button" >find another</button>
+  <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "find.html";
+        };
+    </script>
+
+
+</form>
+</div>
+</body>
+</html>

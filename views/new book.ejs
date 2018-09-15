@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Form</title>
+        <link rel='stylesheet' type='text/css' href='form.css'/>
+        <link href='/assets/form.css' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+
+      <div id="header"><h1>Add a book</h1></div>
+            <div id="wrapper">
+                <div id="inputs">
+
+<form id= "book_form" method="POST" action="/thanks">
+
+  First name:<br>
+  <input type="text" name="firstname" value="<%= qs.firstname %>"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="<%= qs.lastname %>"><br>
+  College Year:<br>
+  <input type="text" name="College_Year" value="<%= qs.College_Year %>"><br>
+
+<input type="radio" name="area" value="Technical" >Technical <br>
+ <input type="radio" name="area" value="Non-Technical"> Non-Technical<br>
+
+</select><br>
+
+Book Name*:<br>
+<input type="text" name="book_name"><br>
+Publisher Name:<br>
+<input type="text" name="Publisher name"><br>
+Author Name*:<br>
+<input type="text" name="Author name"><br>
+<label for="subject">Subject:</label><br>
+<select name="subject">
+  <option value="Select">select</option>
+ <option value="CS">Computer Science</option>
+ <option value="EC">Electronics</option>
+ <option value="EE">Electrical</option>
+ <option value="CE">Civil</option>
+ <option value="others">Others</option><br>
+</select>
+
+<label for="duration">Renting/Sharing Duration</label><br>
+<select name="duration">
+  <option value="Select">select</option>
+ <option value="1 month">1 month</option>
+ <option value="6 months">6 months</option>
+ <option value="1 year">1 year</option>
+ <option value="2 years">2 years</option>
+ <option value="no boundation">no boundation</option><br>
+</select>
+
+  <br><input type="submit" value="Submit">
+    <br><input type="reset" value="Reset">
+
+
+</form>
+<% include partials/nav.ejs %>
+</div>
+</body>
+</html>

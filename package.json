@@ -1,0 +1,23 @@
+{
+  "name": "project_node",
+  "version": "1.0.0",
+  "description": "a small node project",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mocha": "^5.2.0",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.10.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "app"
+  ],
+  "author": "agrima",
+  "license": "ISC"
+}

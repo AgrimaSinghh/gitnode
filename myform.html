@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>home</title>
+        <link href='/assets/form.css' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+      <div id="header"><h1>this is the Bookrent website</h1></div>
+      <% include partials/nav.ejs %>
+
+      <form id="search form" method="POST" action="\find-record">
+        <label for="who">which book do you require</label>
+        Book Name*:<br>
+      <input type="text" name="book_name" value="<%qs.book_name %>"><br>
+Author Name*:<br>
+<input type="text" name="Author_name" value="<%qs.Author_name %>"><br>
+<br><input type="submit" value="Submit">
+<br><input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
